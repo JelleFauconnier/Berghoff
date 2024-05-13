@@ -1,0 +1,73 @@
+:root {
+
+}
+
+html {
+    background: grey;
+}
+
+body {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/*  GAMEBOARD */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.field:nth-child(odd) div:nth-child(even),
+.field:nth-child(even) div:nth-child(odd) {
+    background: green;
+}
+
+.field:nth-child(odd) div:nth-child(odd),
+.field:nth-child(even) div:nth-child(even) {
+    background: lightgreen;
+}
+
+.field {
+    display: flex;
+}
+
+.grid-cell {
+    padding: 2rem;
+    margin: 0;
+}
+
+.tower {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+}
+
+.items {
+    display: flex;
+}
+.item {
+    background: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+
+}
+
+.item span {
+    user-select: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section {
+    margin: 1rem 0;
+}
