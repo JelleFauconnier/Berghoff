@@ -10,7 +10,7 @@ const placeTower = function (tower, cell, col, row) {
     const cellHeight = cell.offsetHeight;  // hoogte van cel
     const leftPos = (col * cellWidth) - cellWidth;
     const topPos = (row * cellHeight) - cellHeight;
-    // De linker bovenhoeken komen overeen met elkaar, denk ik.
+    // De linker bovenhoeken komen overeen met elkaar, denk ik
 
     // TODO: foutmelding als er niet op lege cel wordt geklikt, ook kijken voor als de cel al is ingevuld.
 
