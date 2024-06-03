@@ -71,3 +71,16 @@ body {
 section {
     margin: 1rem 0;
 }
+
+#item-2, #item-1 {
+    background: url("../assets/test.png");
+}
+
+.projectile {
+    background: yellow;
+    border: red 1px solid;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    z-index: 999;
+}
