@@ -8,6 +8,7 @@ let projArr;
 let shooter = new Shooter()
 
 
+
 const placeTower = function (tower, cell) {
     // Bereken de positie van de toren
     // De linker bovenhoeken komen overeen met elkaar, denk ik
@@ -37,14 +38,54 @@ const placeTower = function (tower, cell) {
 
 };
 
-items.addEventListener('click', (event) => {
+const selectItem = function (event) {
+    const money = document.querySelector('.points span')
+    const amount = money.innerText.slice(0,(money.innerText.length - 1))
+    console.log(amount)
     selectedTower = event.target;
-})
+    const amountToBuy = selectedTower.querySelector('.price').innerText.slice(0,(selectedTower.querySelector('span:nth-child(2)').innerText.length - 1))
+    if ((parseInt(amount) < parseInt(amountToBuy))){
+        selectedTower = null
+    }
+}
+
+const placeItem = function (event) {
+    if (selectedTower !== null){
+        const money = document.querySelector('.points span')
+        const amount = parseInt(money.innerText.slice(0,(money.innerText.length - 1)))
+        const amountToBuy = parseInt(selectedTower.querySelector('.price').innerText.slice(0,(selectedTower.querySelector('span:nth-child(2)').innerText.length - 1)))
+        const cell = event.target;
+        if (!((parseInt(amount) < parseInt(amountToBuy)))){
+            placeTower(selectedTower, cell)
+            console.log(amount,amountToBuy)
+            money.innerText = (amount - amountToBuy) + "⭐"
+        }
+    }
+}
+
+items.addEventListener('click', selectItem)
+items.addEventListener('keypress', selectItem)
+gameContainer.addEventListener('click', placeItem)
+gameContainer.addEventListener('keypress', placeItem)
+
+
+
+
 
 
 gameContainer.addEventListener('click', function (event) {
-    const cell = event.target;
-    placeTower(selectedTower, cell)
+    if (selectedTower !== null){
+        const money = document.querySelector('.points span')
+        const amount = parseInt(money.innerText.slice(0,(money.innerText.length - 1)))
+        const amountToBuy = parseInt(selectedTower.querySelector('.price').innerText.slice(0,(selectedTower.querySelector('span:nth-child(2)').innerText.length - 1)))
+        const cell = event.target;
+        if (!((parseInt(amount) < parseInt(amountToBuy)))){
+            placeTower(selectedTower, cell)
+            console.log(amount,amountToBuy)
+            money.innerText = (amount - amountToBuy) + "⭐"
+        }
+    }
+
 });
 
 
@@ -63,7 +104,6 @@ const addZombie = function () {
 
 const gameOver = function () {
     zombieArr.forEach((zombie) => {
-        console.log(zombie.visualize().style.right)
         if (zombie.visualize().style.right.length === 6){
             console.log("GAME OVER")
 
@@ -73,6 +113,8 @@ const gameOver = function () {
 
 
 const zombieDamage = function () {
+    let money = document.querySelector('.points span')
+    let amount = parseInt(money.innerText.slice(0,(money.innerText.length - 1)))
     zombieArr.forEach((zombie) => {
         const zRect = zombie.visualize().getBoundingClientRect()
         heroArr.forEach((hero) => {
@@ -84,6 +126,9 @@ const zombieDamage = function () {
             else if (hero instanceof Blocker && (overlap)){
                 zombie.takeDamage(hero)
                 hero.takeDamage(zombie)
+                amount += 10
+                console.log(amount)
+                money.innerText = amount + "⭐"
             }
         })
     })
@@ -95,18 +140,23 @@ const zombieDamage = function () {
             const overlap = !(zRect.right <= pRect.left || zRect.left >= pRect.right || zRect.bottom <= pRect.top || zRect.top >= pRect.bottom)
             if (overlap){
                 zombie.takeDamage(shooter)
+                amount += 5
+                console.log(amount)
+                money.innerText = amount + "⭐"
                 proj.remove()
             }
             })
     })
 }
 
+const deadSound = new Audio('../Assets/Sounds/punch-140236.mp3')
 const checkDead = function () {
     zombieArr.forEach((zombie) => {
         if (zombie.health <= 0){
             zombie.entityVisual.remove()
             const index = zombieArr.indexOf(zombie)
             zombieArr.splice(index, 1)
+            deadSound.play()
         }
     })
     heroArr.forEach((hero) => {
@@ -114,6 +164,7 @@ const checkDead = function () {
             hero.entityVisual.remove()
             const index = heroArr.indexOf(hero)
             heroArr.splice(index, 1)
+            deadSound.play()
         }
     })
 }
@@ -125,7 +176,7 @@ const gameLoop = function () {
     gameOver()
 }
 
-//setInterval(addZombie,(Math. floor(Math. random()*1000) + 6000))
+setInterval(addZombie,(Math. floor(Math. random()*1000) + 6000))
 setInterval(gameLoop,1000/30)
 
 

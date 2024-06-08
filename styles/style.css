@@ -12,19 +12,30 @@ body {
 }
 
 main{
-    height: 100%;
     overflow: hidden;
 }
+
 
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
+#bgimage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/background.jpg");
+    filter: blur(7px) saturate(140%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    overflow: hidden;
+}
+
 .container {
-    max-width: 90rem;
+    max-width: 110rem;
     margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-inline: 4rem;
 }
 
 /*  GAMEBOARD */
@@ -33,6 +44,7 @@ main{
     flex-direction: column;
     position: relative;
     height: 40rem;
+    overflow: hidden;
 }
 
 .field:nth-child(odd) .grid-cell:nth-child(even),
@@ -73,6 +85,22 @@ main{
     width: 100%;
     height: 100%;
 
+}
+
+.game-towers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.points{
+    background: darkgoldenrod;
+    width: 20%;
+    text-align: right;
+}
+.points span{
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .items {
