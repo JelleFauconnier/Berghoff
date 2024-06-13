@@ -68,11 +68,11 @@ export class Shooter extends Entity{
 
     #projectile
     #interval
-    #pop
+    pop
 
     constructor() {
         super(100,"Shooter","../Assets/HEROFLES.png",15);
-        this.#pop = new Audio('../Assets/Sounds/pop-39222.mp3')
+        this.pop = new Audio('../Assets/Sounds/pop-39222.mp3')
     }
 
     shoot(){
@@ -82,7 +82,7 @@ export class Shooter extends Entity{
         this.#interval = setInterval(() => this.#projectile.move(),1000/30)
         //this.#projectile.move()
         console.log(this.#projectile)
-        this.#pop.play()
+        this.pop.play()
     }
 }
 

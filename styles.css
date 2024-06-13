@@ -128,17 +128,18 @@ body{
     text-align: center;
 }
 
+.getstarted a{
+    text-decoration: none;
+    color: white;
+    background-color: #61887b;
+    padding-block: 1.5rem;
+    padding-inline: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+
 #vervuiling{
     margin-top: -4rem;
     width: 100%;
-}
-
-.getstarted button{
-    width: 50%;
-    padding-block: 2rem;
-    border-radius: 20px;
-    background-color: #61887b;
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
 }

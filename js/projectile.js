@@ -12,8 +12,8 @@ class Projectile {
         this.projVisual.style.position = 'absolute'
         this.projVisual.style.top = '50%'
         this.projVisual.style.left = '50%'
-        this.projVisual.style.width = "10%"
-        this.projVisual.style.height = '10%'
+        this.projVisual.style.width = "20%"
+        this.projVisual.style.height = '20%'
         this.projVisual.style.marginLeft = '0px'
         this.projVisual.className = 'Proj'
     }

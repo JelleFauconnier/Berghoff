@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b655cec0-c739-4989-8546-621574ecad95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/js/hero.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/projectile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/villain.js" afterDir="false" />
+    <list default="true" id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Berghoff.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/accidentally-punching-the-floor-99814.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/punch-140236.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HEROFLES.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HEROFLES.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HEROPOT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HEROPOT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PROJECTILE.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PROJECTILE.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highscore/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/projectile.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/projectile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level-selector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/level-selector/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,121 +29,61 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;JelleFauconnier&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="bd8f19ba-172d-4277-a771-b033f6140737" />
-        <option name="url" value="https://github.com/JelleFauconnier/Berghoff.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2fd97XKdWGrl5fK3W5o4fqq35bc" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2hpVnqrWo9bbjL0JhuS3Jo05p2M" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "SplashscreenJELLE",
-    "last_opened_file_path": "C:/Users/jelle/Berghoff/js",
-    "list.type.of.created.stylesheet": "CSS",
+    "last_opened_file_path": "C:/Users/jelle/Downloads/Berghoff/Berghoff/Assets/Sounds",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jelle\Berghoff\js" />
-      <recent name="C:\Users\jelle\Berghoff\Assets" />
-      <recent name="C:\Users\jelle\Berghoff" />
-      <recent name="C:\Users\jelle\Berghoff\game" />
+      <recent name="C:\Users\jelle\Downloads\Berghoff\Berghoff\Assets\Sounds" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b655cec0-c739-4989-8546-621574ecad95" name="Changes" comment="" />
-      <created>1714119920661</created>
+      <changelist id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="" />
+      <created>1718291175146</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1714119920661</updated>
-      <workItem from="1714119921776" duration="658000" />
-      <workItem from="1714229371934" duration="6000" />
-      <workItem from="1715012533618" duration="13704000" />
-      <workItem from="1715361950561" duration="5853000" />
-      <workItem from="1715705299213" duration="3869000" />
-      <workItem from="1715774048088" duration="164000" />
-      <workItem from="1715938891702" duration="792000" />
-      <workItem from="1715939848845" duration="593000" />
-      <workItem from="1716468288546" duration="2629000" />
-      <workItem from="1716747356056" duration="294000" />
-      <workItem from="1716747654067" duration="329000" />
-      <workItem from="1716818840388" duration="11000" />
-      <workItem from="1717842403122" duration="18782000" />
+      <updated>1718291175146</updated>
+      <workItem from="1718291176255" duration="5093000" />
     </task>
-    <task id="LOCAL-00001" summary="Game Index.html naar game folder. Splashscreen index.html &amp; styles toegevoegd. Assets toegevoegd">
-      <option name="closed" value="true" />
-      <created>1716747921942</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1716747921943</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Game Index.html naar game folder. Splashscreen index.html &amp; styles toegevoegd. Assets toegevoegd" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game Index.html naar game folder. Splashscreen index.html &amp; styles toegevoegd. Assets toegevoegd" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

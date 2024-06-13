@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Select Difficulty Level</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/levelselector.js" type="module"></script>
+    <script src="../js/submitscript.js" type="module"></script>
 </head>
 <body>
+<div id="bgimage"></div>
+  <main>
+      <section class=level-selector>
 
+          <form id="level-form">
+              <h1>Select Difficulty Level</h1>
+              <label>
+                  <input type="radio" name="difficulty" value="easy"> Easy
+              </label>
+              <br>
+              <label>
+                  <input type="radio" name="difficulty" value="normal" checked> Normal
+              </label>
+              <br>
+              <label>
+                  <input type="radio" name="difficulty" value="hard"> Hard
+              </label>
+              <br>
+              <button type="submit">Start Game</button>
+          </form>
+      </section>
+  </main>
+
+    
 </body>
 </html>
