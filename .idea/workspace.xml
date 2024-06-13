@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,9 +19,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2hpVnqrWo9bbjL0JhuS3Jo05p2M" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,7 +38,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "SplashscreenJELLE",
     "last_opened_file_path": "C:/Users/jelle/Downloads/Berghoff/Berghoff/Assets/Sounds",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718291175146</updated>
       <workItem from="1718291176255" duration="8091000" />
+      <workItem from="1718314943315" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="commit met alterations v. cyka1">
       <option name="closed" value="true" />

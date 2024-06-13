@@ -93,8 +93,11 @@ const placeItem = function (event) {
 
 
 blockerItem.addEventListener('click', selectItem);
+blockerItem.addEventListener('keypress', selectItem);
 shooterItem.addEventListener('click', selectItem);
+shooterItem.addEventListener('keypress', selectItem);
 gameContainer.addEventListener('click', placeItem);
+gameContainer.addEventListener('keypress', placeItem);
 
 const addZombie = function () {
     const cellNr = Math.floor(Math.random() * 6) + 1;
