@@ -38,6 +38,7 @@ const energiebesparingstips = [
     "Plaats zonnepanelen om zelf energie op te wekken.",
     "Doe lichten uit in kamers die je niet gebruikt."
 ];
+let gameOverBool = false;
 
 const initializeGame = function(difficulty) {
     const difficultySettings = setDifficulty(difficulty);
@@ -93,11 +94,23 @@ const placeItem = function (event) {
 
 
 blockerItem.addEventListener('click', selectItem);
-blockerItem.addEventListener('keypress', selectItem);
+blockerItem.addEventListener('keydown', function (e) {
+    if (e.key === "Enter"){
+        selectItem(e)
+    }
+});
 shooterItem.addEventListener('click', selectItem);
-shooterItem.addEventListener('keypress', selectItem);
+shooterItem.addEventListener('keydown', function (e) {
+    if (e.key === "Enter"){
+        selectItem(e)
+    }
+});
 gameContainer.addEventListener('click', placeItem);
-gameContainer.addEventListener('keypress', placeItem);
+gameContainer.addEventListener('keydown', function (e) {
+    if (e.key === "Enter"){
+        placeItem(e)
+    }
+});
 
 const addZombie = function () {
     const cellNr = Math.floor(Math.random() * 6) + 1;
@@ -119,17 +132,20 @@ const gameOver = function () {
         }
     })
 
-    if (zombiesPassed === 3) {
+    if (zombiesPassed === 3 && !gameOverBool) {
         gameOverScreen.classList.remove('visually-hidden')
         const energieTip = energiebesparingstips.at(Math.floor(Math.random() * energiebesparingstips.length));
         const energieTipSpan = document.createElement('span')
-        energieTipSpan.innerText = energieTip;
+        energieTipSpan.innerText = "Tip: " + energieTip;
+        energieTipSpan.style.fontSize = '1rem'
+        energieTipSpan.style.textAlign = 'center'
         gameOverScreen.appendChild(energieTipSpan)
         clearInterval(zombieInterval);
         clearInterval(gameLoopInterval);
         blockerItem.removeEventListener('click', selectItem)
         shooterItem.removeEventListener('click', selectItem);
         gameContainer.removeEventListener('click', placeItem);
+        gameOverBool = true;
     }
 };
 

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="" />
+    <list default="true" id="5da8b989-29b0-49d9-89a1-8bec82d45f20" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level-selector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/level-selector/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/jelle/Downloads/Berghoff/Berghoff/Assets/Sounds",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,6 +68,7 @@
       <updated>1718291175146</updated>
       <workItem from="1718291176255" duration="8091000" />
       <workItem from="1718314943315" duration="28000" />
+      <workItem from="1718314997175" duration="1462000" />
     </task>
     <task id="LOCAL-00001" summary="commit met alterations v. cyka1">
       <option name="closed" value="true" />
@@ -70,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718296624293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit met alterations v. cyka1">
+      <option name="closed" value="true" />
+      <created>1718315067472</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718315067472</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
