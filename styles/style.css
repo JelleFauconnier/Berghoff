@@ -1,14 +1,15 @@
-:root {
 
-}
 
 html {
     background: grey;
 }
 
 body {
-    max-width: 1280px;
     margin: auto;
+    overflow: hidden;
+}
+
+main{
 }
 
 
@@ -16,50 +17,119 @@ body {
     box-sizing: border-box;
 }
 
+#bgimage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/background.jpg");
+    filter: blur(7px) saturate(140%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    z-index: -1;
+    margin-top: -1rem;
+}
+
+:focus{
+    outline-color:red ;
+}
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding-inline: 4rem;
+}
+
+.visually-hidden {
+    top: -1000px;
+    visibility: hidden;
+}
+
 /*  GAMEBOARD */
 .game-container {
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 40rem;
+    overflow: hidden;
 }
 
-.field:nth-child(odd) div:nth-child(even),
-.field:nth-child(even) div:nth-child(odd) {
+.field:nth-child(odd) .grid-cell:nth-child(even),
+.field:nth-child(even) .grid-cell:nth-child(odd) {
     background: green;
 }
 
-.field:nth-child(odd) div:nth-child(odd),
-.field:nth-child(even) div:nth-child(even) {
+.field:nth-child(odd) .grid-cell:nth-child(odd),
+.field:nth-child(even) .grid-cell:nth-child(even) {
     background: lightgreen;
 }
 
 .field {
     display: flex;
+    height: 16.6%;
 }
 
 .grid-cell {
-    padding: 2rem;
     margin: 0;
+    width: 12.5%;
+    overflow: visible;
+}
+
+.grid-cell>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+}
+
+.grid-cell img{
+    z-index: 100;
+    /*width: 100%;*/
+    height: 120%;
+    margin-top: -1rem;
 }
 
 .tower {
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
+    display: block;
     background-color: red;
+    width: 100%;
+    height: 100%;
+
+}
+
+.game-towers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.points{
+    background: darkgoldenrod;
+    width: 20%;
+    text-align: right;
+    z-index: 1000;
+    border-radius: 2rem;
+}
+.points span{
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .items {
     display: flex;
+    gap: 2rem;
 }
 .item {
     background: darkgoldenrod;
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    height: 20%;
+    width: 18rem;
     align-items: center;
-
+    border-radius: 2rem;
 }
 
 .item span {
@@ -68,6 +138,90 @@ body {
     font-size: 1.2rem;
 }
 
+.item img{
+    /*width: 80%;*/
+    height: 9rem;
+    /*margin-top: -4rem;*/
+}
+
 section {
     margin: 1rem 0;
+}
+
+.Proj{
+    filter: brightness(180%) drop-shadow(0px 0px 10px #eee) hue-rotate(60deg);
+}
+
+
+#gameOver{
+    position: absolute;
+    width: 20rem;
+    height: 16rem;
+    background-color: #46a60f;
+    left: calc(50% - 10rem);
+    top: calc(50% - 8rem);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px #eeeeee;
+}
+
+#gameOver a{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #8fec8f;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+.level-selector {
+    background-color: #f9f9f9; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2rem;
+}
+
+.level-selector h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+    color:   green; 
+}
+
+.level-selector form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.level-selector label {
+    margin-bottom: 0.5rem;
+}
+
+.level-selector input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.level-selector button {
+    padding: 0.75rem 1.5rem;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.level-selector button:hover {
+    background: green;
 }

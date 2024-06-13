@@ -1,10 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/main.js" type="module"></script>
 </head>
 <body>
+<div id="bgimage"></div>
+<header>
+    <section class="game-towers container">
+    <div class="items">
+        <div class="item" id="item-1" tabindex="0">
+            <img src="../Assets/HEROPOT.png" alt="Blocker">
+            <span>Blocker</span>
+            <span class="price">25⭐</span>
+        </div>
+        <div class="item" id="item-2" tabindex="0">
+            <img src="../Assets/HEROFLES.png" alt="Shooter">
+            <span>Shooter</span>
+            <span class="price">75⭐</span>
+        </div>
+    </div>
+    <div class="points">
+        <span>100⭐</span>
+    </div>
+</section>
+</header>
+<main>
 
+    <section id="gameOver" class="visually-hidden">
+        <span>GAME OVER!</span>
+        <a href="../level-selector/">Terug naar de Level-selector</a>
+    </section>
+
+    <section class="game-container container">
+        <div class="field" id="field-1">
+            <div class="grid-cell" data-row="1" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="1" data-col="8" tabindex="0"></div>
+
+        </div>
+        <div class="field" id="field-2">
+            <div class="grid-cell" data-row="2" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="2" data-col="8" tabindex="0"></div>
+
+        </div>
+        <div class="field" id="field-3">
+            <div class="grid-cell" data-row="3" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="3" data-col="8" tabindex="0"></div>
+
+        </div>
+        <div class="field" id="field-4">
+            <div class="grid-cell" data-row="4" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="4" data-col="8" tabindex="0"></div>
+
+        </div>
+        <div class="field" id="field-5">
+            <div class="grid-cell" data-row="5" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="5" data-col="8" tabindex="0"></div>
+
+        </div>
+        <div class="field" id="field-6">
+            <div class="grid-cell" data-row="6" data-col="1" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="2" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="3" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="4" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="5" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="6" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="7" tabindex="0"></div>
+            <div class="grid-cell" data-row="6" data-col="8" tabindex="0"></div>
+
+        </div>
+    </section>
+    
+</main>
+<footer>
+
+</footer>
 </body>
 </html>
