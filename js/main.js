@@ -16,6 +16,28 @@ let zombiesPassed = 0;
 let zombieSpeed;
 let zombieIntervalTime;
 let shooter = new Shooter();
+const energiebesparingstips = [
+    "Gebruik LED-lampen in plaats van gloeilampen.",
+    "Schakel apparaten volledig uit wanneer ze niet in gebruik zijn.",
+    "Was kleding op een lagere temperatuur.",
+    "Gebruik een programmeerbare thermostaat om de verwarming te regelen.",
+    "Isoleer je woning om warmteverlies te voorkomen.",
+    "Maak gebruik van zonlicht in plaats van elektrische verlichting.",
+    "Kies voor energiezuinige apparaten bij vervanging.",
+    "Droog de was aan de lucht in plaats van in de droger.",
+    "Gebruik tochtstrips om kieren en naden te dichten.",
+    "Zet de verwarming lager en trek een extra trui aan.",
+    "Laat apparaten niet op stand-by staan.",
+    "Gebruik een waterbesparende douchekop.",
+    "Kook met deksels op de pannen om energie te besparen.",
+    "Vervang oude ramen door dubbel glas.",
+    "Zet de koelkast op een energiezuinige temperatuur.",
+    "Sluit gordijnen 's nachts om warmte binnen te houden.",
+    "Gebruik een laptop in plaats van een desktopcomputer.",
+    "Zet de vaatwasser pas aan als hij volledig vol is.",
+    "Plaats zonnepanelen om zelf energie op te wekken.",
+    "Doe lichten uit in kamers die je niet gebruikt."
+];
 
 const initializeGame = function(difficulty) {
     const difficultySettings = setDifficulty(difficulty);
@@ -90,13 +112,21 @@ const gameOver = function () {
     zombieArr.forEach((zombie) => {
         if (zombie.visualize().style.right.length === 6){
             zombiesPassed += 1;
+            zombieArr.splice(zombieArr.indexOf(zombie), 1)
         }
     })
 
-    if (zombiesPassed > 3) {
+    if (zombiesPassed === 3) {
         gameOverScreen.classList.remove('visually-hidden')
+        const energieTip = energiebesparingstips.at(Math.floor(Math.random() * energiebesparingstips.length));
+        const energieTipSpan = document.createElement('span')
+        energieTipSpan.innerText = energieTip;
+        gameOverScreen.appendChild(energieTipSpan)
         clearInterval(zombieInterval);
         clearInterval(gameLoopInterval);
+        blockerItem.removeEventListener('click', selectItem)
+        shooterItem.removeEventListener('click', selectItem);
+        gameContainer.removeEventListener('click', placeItem);
     }
 };
 
@@ -163,9 +193,6 @@ const gameLoop = function () {
     zombieDamage();
     checkDead();
     gameOver();
-    blockerItem.removeEventListener('click', selectItem)
-    shooterItem.removeEventListener('click', selectItem);
-    gameContainer.removeEventListener('click', placeItem);
 };
 
 const startGame = function(difficulty) {
